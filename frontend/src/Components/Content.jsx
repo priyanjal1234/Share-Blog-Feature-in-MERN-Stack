@@ -10,7 +10,7 @@ const Content = () => {
 
     async function fetchBlogs() {
         try {
-            let fetchBlogsRes = await axios.get("http://localhost:3000/api/blogs/read",{withCredentials: true})
+            let fetchBlogsRes = await axios.get("https://share-blog-feature-in-mern-stack-backend.onrender.com/api/blogs/read",{withCredentials: true})
             setblogs(fetchBlogsRes.data)
         } catch (error) {
             console.log(error.message)
@@ -23,7 +23,7 @@ const Content = () => {
 
     async function handleCreateBlog(e) {
         e.preventDefault()
-        let createBlogRes = await axios.post("http://localhost:3000/api/blogs/create",{blogContent})
+        let createBlogRes = await axios.post("https://share-blog-feature-in-mern-stack-backend.onrender.com/api/blogs/create",{blogContent})
         if(createBlogRes.status === 201) {
             alert("Blog Created Successfully")
         }
