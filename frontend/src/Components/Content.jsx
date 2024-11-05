@@ -43,7 +43,7 @@ const Content = () => {
     }
 
     function handleShareonFacebook(blog) {
-        const shareUrl2 = 'https://share-blog-feature-in-mern-stack-frontend.onrender.com/blog/${blog && blog._id}`
+        const shareUrl2 = `https://share-blog-feature-in-mern-stack-frontend.onrender.com/blog/${blog && blog._id}`
         window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl2)}`, '_blank');
     }
 
