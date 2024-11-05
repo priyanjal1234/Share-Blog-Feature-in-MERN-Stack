@@ -38,12 +38,12 @@ const Content = () => {
     }
 
     function handleShareonWhatsapp(blog) {
-        const shareUrl = `http://localhost:5173/blog/${blog && blog._id}`
+        const shareUrl = `https://share-blog-feature-in-mern-stack-frontend.onrender.com/blog/${blog && blog._id}`
         window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(shareUrl)}`, '_blank');
     }
 
     function handleShareonFacebook(blog) {
-        const shareUrl2 = `http://localhost:5173/blog/${blog && blog._id}`
+        const shareUrl2 = 'https://share-blog-feature-in-mern-stack-frontend.onrender.com/blog/${blog && blog._id}`
         window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl2)}`, '_blank');
     }
 
