@@ -6,6 +6,8 @@ module.exports.createBlogController = async function (req, res) {
     let blog = await blogModel.create({
       blogContent,
     });
+
+    console.log(blog)
   
       res.status(201).json({ message: "Blog created successfully" });
     
